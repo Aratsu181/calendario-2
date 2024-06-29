@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Vacaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Vacaciones</h1>
+    <form id="loginForm">
+        <label for="adminPassword">Contraseña de administrador:</label>
+        <input type="password" id="adminPassword" required>
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <form id="vacationForm" style="display: none;">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <label for="role">Rol:</label>
+        <select id="role" required>
+            <option value="Tecnico">Técnico</option>
+            <option value="Comercial">Comercial</option>
+        </select>
+        <label for="startDate">Fecha de Inicio:</label>
+        <input type="date" id="startDate" required>
+        <label for="endDate">Fecha de Fin:</label>
+        <input type="date" id="endDate" required>
+        <label for="year">Año:</label>
+        <select id="year" required>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+        </select>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Calendario</h2>
+    <div id="calendar-container"></div>
+
+    <h2>Vacaciones Registradas</h2>
+    <ul id="vacationList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
